@@ -8,10 +8,14 @@ class SimpleBlocObserver implements BlocObserver {
   }
 
   @override
-  void onClose(BlocBase bloc) {}
+  void onClose(BlocBase bloc) {
+    debugPrint("onclose = $bloc");
+  }
 
   @override
-  void onCreate(BlocBase bloc) {}
+  void onCreate(BlocBase bloc) {
+    debugPrint("oncreate = $bloc");
+  }
 
   @override
   void onError(BlocBase bloc, Object error, StackTrace stackTrace) {}
